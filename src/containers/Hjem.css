@@ -1,0 +1,138 @@
+.Home .lander {
+  padding: 0px 0;
+  text-align: center;
+  align-items: center;
+}
+
+.Home .lander h1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+}
+
+.Home .lander p {
+  color: #999;
+}
+
+.logo {
+  margin-top: 25px;
+}
+
+form {
+  align-items: center;
+  padding-top: 100px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:focus {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover, a:active {
+  text-decoration: none;
+  color: #fff;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  width: 100%;
+  -webkit-transform: translateZ(50px); 
+  transform: translateZ(50px);
+  transition: color .4s cubic-bezier(.17,.67,.83,.67);
+  color: #fff;
+  background: linear-gradient(to right, #111012 0%, #3e0101 100%);
+  -webkit-transform-style: preserve-3d;
+}
+
+.footSynth {
+  position: fixed;
+  bottom: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  width: 100%;
+  -webkit-transform: translateZ(50px); 
+  transform: translateZ(50px);
+}
+
+.footSynth {
+  transition: color .4s cubic-bezier(.17,.67,.83,.67);
+  z-index: 100;
+  min-width: 150px;
+}
+
+.footSynth {
+  transition: color .4s cubic-bezier(.17,.67,.83,.67);
+  color: #fff;
+  background: linear-gradient(to right, #111012 0%, #3e0101 100%);
+  -webkit-transform-style: preserve-3d;
+}
+
+.footSynth {
+  opacity: 1;
+  transition: opacity 0.4s cubic-bezier(.17,.67,.83,.67);
+}
+
+.containerSynth {
+  width: 100%;
+  font-size: 12px;
+  color: #fff;
+}
+
+:root {
+  --purple: #3C00FF;
+  --purple--light: #6b3eff;
+}
+
+.button--cd {
+  -webkit-transform: translateZ(50px); 
+  transform: translateZ(50px);
+}
+
+.button--cd {
+  height: 40px;
+  border-radius: 5px;
+  border: 2px solid var(--black);
+  background: linear-gradient(to right, #111012 0%, #3e0101 100%);
+  margin: 150px auto;
+  color: #fff;
+  background-color: #fff;
+  z-index: 100;
+  min-width: 150px;
+}
+
+.button--cd:before {
+  border-radius: 3px;
+  content: '';    
+  display: block;
+  height: 100%;
+  position: absolute;
+  top: 0; left: 0;
+  opacity: 0;
+  width: 100%;
+  z-index: -100;
+  transition: opacity 0.4s cubic-bezier(.17,.67,.83,.67);
+}
+
+.button--cd {
+  opacity: 1;
+  transition: opacity 0.4s cubic-bezier(.17,.67,.83,.67);
+}

@@ -1,18 +1,19 @@
 import React, { Component } from 'react';
+import { withRouter } from 'react-router-dom'
+import Routes from './Routes'
 import './App.css';
 
 class App extends Component {
   render() {
+
+    const childProps = {}
+
     return (
       <div className="App">
-        <header className="App-header">
-          <p>
-            Welcome to Valhalla!
-          </p>
-        </header>
+        <Routes childProps={childProps} />
       </div>
     );
   }
 }
 
-export default App;
+export default withRouter(App);

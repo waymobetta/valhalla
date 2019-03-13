@@ -1,0 +1,47 @@
+html {
+  background-color: #1d1d1d;
+}
+
+.Helse .lander {
+  padding: 0px 0;
+  text-align: center;
+  align-items: center;
+}
+
+.Helse .lander h1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+}
+
+.Helse .lander p {
+  color: #999;
+  position: relative;
+  text-align: center;
+}
+
+.title {
+  color: #777;
+}
+
+.indicator {
+  padding-top: 175px;
+}
+
+.logo {
+  margin-top: 25px;
+}
+
+.foot {
+  position: fixed;
+  bottom: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #efefef;
+  text-align: center;
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  font-size: 12px;
+}

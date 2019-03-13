@@ -1,0 +1,53 @@
+html {
+  background-color: #1d1d1d;
+  height: 100%;
+  margin: 0;
+}
+
+.GodkjentListe .lander {
+  padding: 0px 0;
+  text-align: center;
+  align-items: center;
+}
+
+.GodkjentListe .lander h1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+}
+
+.GodkjentListe .lander p {
+  color: #999;
+  position: relative;
+  text-align: center;
+}
+
+.list {
+  padding-top: 55px;
+}
+
+ul {
+  position: relative;
+  text-align: center;
+  padding: 10px 0;
+  list-style-type: none;
+  color: #444;
+}
+
+.logo {
+  margin-top: 25px;
+}
+
+.foot {
+  position: fixed;
+  bottom: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #efefef;
+  text-align: center;
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  font-size: 12px;
+}
