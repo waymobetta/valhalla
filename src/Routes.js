@@ -20,7 +20,7 @@ export default ({ childProps }) =>
     { /* unauthenticated routes */ }
 
     <UnauthenticatedRoute
-      path='/godkjent'
+      path='/approved'
       exact
       component={GodkjentListe}
       props={childProps} />
@@ -28,7 +28,7 @@ export default ({ childProps }) =>
     { /* testing purposes */ }
 
     <UnauthenticatedRoute
-      path='/helse'
+      path='/health'
       exact
       component={Helse}
       props={childProps} />
