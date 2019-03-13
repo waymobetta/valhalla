@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import HelseModule from '../util/Helse'
+// import HelseModule from '../util/Helse'
 import './Helse.css'
 
 export default class Helse extends Component {
@@ -12,9 +12,11 @@ export default class Helse extends Component {
   }
 
   async componentWillMount() {
-    const helseResponse = await HelseModule.Get()
+    // const helseResponse = await HelseModule.Get()
+    
     this.setState({
-      helse: helseResponse.status
+      // helse: helseResponse.status
+      helse: 'OK'
     })
   }
 
