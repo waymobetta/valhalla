@@ -23,7 +23,7 @@ export default class Hjem extends Component {
     this.setState({ isLoading: true })
 
     try {
-    	this.props.history.push('/godkjent')
+    	this.props.history.push('/approved')
     } catch (e) {
       console.error(e.message)
       this.setState({
