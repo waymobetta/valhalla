@@ -4,6 +4,12 @@ html {
   margin: 0;
 }
 
+.godkjentCount {
+  color: #47aaaa;
+  font-family: "Norse";
+  font-size: 17pt;
+}
+
 .GodkjentListe .lander {
   padding: 0px 0;
   text-align: center;
@@ -50,4 +56,9 @@ ul {
 .container {
   width: 100%;
   font-size: 12px;
+}
+
+.containerSynthHeader {
+  width: 100%;
+  font-size: 17px;
 }

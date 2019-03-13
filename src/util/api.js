@@ -3,8 +3,8 @@ import dotenv from 'dotenv'
 import spec from '../swagger/swagger.json'
 dotenv.config()
 
-export const baseURL = process.env.API_BASE_URL || 'http://valhalla-api.waymobetta.com:8080/v1'
-// export const baseURL = process.env.API_BASE_URL || 'http://localhost:5000/v1'
+// export const baseURL = process.env.API_BASE_URL || 'http://valhalla-api.waymobetta.com:8080/v1'
+export const baseURL = process.env.API_BASE_URL || 'http://localhost:5000/v1'
 
 spec.host = baseURL.replace(/.*\/\/([\w+:]+)\/.*/, '$1')
 

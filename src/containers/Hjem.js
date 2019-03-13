@@ -36,23 +36,31 @@ export default class Hjem extends Component {
   	return (  
 		  <div className='Hjem'>
 		  	<div className="header">
-		  		<div className="containerSynth">
-			    	<a href="/">
-            	v a l h a l l a
+		  		<div className="containerSynthHeader">
+          	<a href="/" style={{ color: '#746945' }}>
+            	V A L H A L L A
             </a>
 			    </div>
 		    </div>
-		    <form onSubmit={event => this.handleSubmit(event)}>
-			    <LoaderButton
-			      block
-			      className='button--cd btn btn-outline-primary'
-			      outline
-			      color='primary'
-			      type='submit'
-			      isLoading={this.state.isLoading}
-			      text='Enter..'
-			     />
-				</form>
+		    <div className="description">
+		    	<p
+		    		style={{ 'padding-top': '100px', color: '#746945' }}>
+		    		AN EVERLASTING LIST<br/><br/>SELF-OWNED, SELF-MANAGED<br/><br/>WITHIN WHICH ONE CAN DISPLAY<br/><br/>THROUGH THE MINTING AND BURNING OF DIGITAL ASSETS<br/><br/>THEIR PUBLIC ADVOCATION FOR OTHERS
+		    	</p>
+		    </div>
+		    <div className="button">
+			    <form onSubmit={event => this.handleSubmit(event)}>
+				    <LoaderButton
+				      block
+				      className='button--cd btn btn-outline-primary'
+				      outline
+				      color='primary'
+				      type='submit'
+				      isLoading={this.state.isLoading}
+				      text='enter'
+				     />
+					</form>
+				</div>
 				<div className="footSynth">
           <div className="containerSynth">
             <a href="https://waymobetta.com">

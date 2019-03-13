@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-// import HelseModule from '../util/Helse'
+import HelseModule from '../util/Helse'
 import './Helse.css'
 
 export default class Helse extends Component {
@@ -13,7 +13,7 @@ export default class Helse extends Component {
 
   async componentWillMount() {
     // const helseResponse = await HelseModule.Get()
-    
+
     this.setState({
       // helse: helseResponse.status
       helse: 'OK'
@@ -24,9 +24,9 @@ export default class Helse extends Component {
     return (
       <div className='Helse'>
         <div className="header">
-          <div className="containerSynth">
-            <a href="/">
-              v a l h a l l a
+          <div className="containerSynthHeader">
+            <a href="/" style={{ color: '#746945' }}>
+              V A L H A L L A
             </a>
           </div>
         </div>

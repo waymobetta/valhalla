@@ -5,7 +5,8 @@
 }
 
 .Home .lander h1 {
-  font-family: "Open Sans", sans-serif;
+  /*font-family: "Open Sans", sans-serif;*/
+  font-family: "Norse";
   font-weight: 600;
 }
 
@@ -17,9 +18,21 @@
   margin-top: 25px;
 }
 
+@font-face{ 
+  font-family: 'Norse';
+    src: url(../fonts/norse-webfont.woff2) format('woff2'),
+         url(../fonts/norse-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.description {
+  font-family: "Norse";
+  font-size: 17pt;
+}
+
 form {
   align-items: center;
-  padding-top: 100px;
 }
 
 a {
@@ -48,6 +61,8 @@ a:hover, a:active {
 }
 
 .header {
+  font-family: "Norse";
+  font-size: 17pt;
   position: fixed;
   top: 0;
   padding-top: 15px;
@@ -97,12 +112,19 @@ a:hover, a:active {
   color: #fff;
 }
 
+.containerSynthHeader {
+  width: 100%;
+  font-size: 17px;
+}
+
 :root {
   --purple: #3C00FF;
   --purple--light: #6b3eff;
 }
 
 .button--cd {
+  font-family: "Norse";
+  font-size: 17pt;
   -webkit-transform: translateZ(50px); 
   transform: translateZ(50px);
 }
