@@ -3,12 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "ethers": "^4.0.27",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-router-dom": "^4.3.1",
     "react-scripts": "2.1.8",
     "reactstrap": "^7.1.0",
-    "swagger-client": "^3.8.25"
+    "swagger-client": "^3.8.25",
+    "web3": "^1.0.0-beta.52",
+    "web3-react": "^5.0.4"
   },
   "scripts": {
     "start": "react-scripts start",

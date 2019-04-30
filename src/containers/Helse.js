@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import HelseModule from '../util/Helse'
+// import HelseModule from '../util/Helse'
 import './Helse.css'
 
 export default class Helse extends Component {

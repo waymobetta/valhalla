@@ -7,8 +7,19 @@ export default class Hjem extends Component {
 		super(props)
 
 		this.state = {
-			isLoading: false
+			isLoading: false,
+			isAuthenticated: false,
+			account: '',
+			balance: 0
 		}
+	}
+
+	componentDidMount () {
+		this.setState({
+			isAuthenticated: this.props.isAuthenticated,
+			account: this.props.account,
+			balance: this.props.balance
+		})
 	}
 
 	handleChange (event) {
@@ -22,6 +33,12 @@ export default class Hjem extends Component {
 
     this.setState({ isLoading: true })
 
+    if (this.props.balance <= 0) {
+    	alert('You have not been deemed worthy to pass through the gates of Valhalla')
+    	return
+		}
+		alert(`You are among the few allowed passage into Valhalla. Welcome home brother!`)
+
     try {
     	this.props.history.push('/approved')
     } catch (e) {
@@ -31,9 +48,18 @@ export default class Hjem extends Component {
       })
     }
   }
+
+  validateAccess () {
+  	if (
+  		this.props.isAuthenticated
+  		) {
+  		return true
+  	}
+  	return false
+  }
 	
 	render () {
-  	return (  
+  	return (
 		  <div className='Hjem'>
 		  	<div className="header">
 		  		<div className="containerSynthHeader">
@@ -44,7 +70,7 @@ export default class Hjem extends Component {
 		    </div>
 		    <div className="description">
 		    	<p
-		    		style={{ 'padding-top': '100px', color: '#746945' }}>
+		    		style={{ 'paddingTop': '100px', color: '#746945' }}>
 		    		AN EVERLASTING LIST<br/><br/>SELF-OWNED, SELF-MANAGED<br/><br/>WITHIN WHICH ONE CAN DISPLAY<br/><br/>THROUGH THE MINTING AND BURNING OF DIGITAL ASSETS<br/><br/>THEIR PUBLIC ADVOCATION FOR OTHERS
 		    	</p>
 		    </div>

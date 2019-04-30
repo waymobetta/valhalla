@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import './Godkjent.css'
 
 export default class Godkjent extends Component {
   render () {

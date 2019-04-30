@@ -3,6 +3,7 @@ import { Route, Switch } from 'react-router-dom'
 import Hjem from './containers/Hjem'
 import NotFound from './components/NotFound'
 import AppliedRoute from './components/AppliedRoute'
+import AuthenticatedRoute from './components/AuthenticatedRoute'
 import UnauthenticatedRoute from './components/UnauthenticatedRoute'
 import GodkjentListe from './containers/GodkjentListe'
 import Helse from './containers/Helse'
@@ -19,7 +20,7 @@ export default ({ childProps }) =>
 
     { /* unauthenticated routes */ }
 
-    <UnauthenticatedRoute
+    <AuthenticatedRoute
       path='/approved'
       exact
       component={GodkjentListe}
