@@ -49,7 +49,7 @@ class App extends Component {
 						})
 					}
 				}
-			})	
+			})
    } catch (error) {
      // Catch any errors for any of the above operations.
      alert(
@@ -60,8 +60,6 @@ class App extends Component {
 	}
 
   render() {
-  	// console.log(this.state.isConnected, this.state.account, this.state.balance, this.state.isAuthenticated)
-
     const childProps = {
     	isAuthenticated: this.state.isAuthenticated,
     	account: this.state.account,

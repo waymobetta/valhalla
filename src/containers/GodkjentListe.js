@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
-// import GodkjentModule from '../util/Godkjent'
+import GodkjentModule from '../util/Godkjent'
 import Godkjent from './Godkjent'
-import { DB } from '../util/db'
 import './GodkjentListe.css'
 
 export default class GodkjentListe extends Component {
@@ -15,12 +14,11 @@ export default class GodkjentListe extends Component {
   }
 
   async componentWillMount() {
-    // const godkjentRespons = await GodkjentModule.Get();
+    const godkjentResponse = await GodkjentModule.Get();
   
     this.setState({
-      // godkjentListe: godkjentRespons.godkjentListe
-      godkjentListe: DB,
-      godkjentNum: DB.length
+      godkjentListe: godkjentResponse.godkjentListe,
+      godkjentNum: godkjentResponse.godkjentListe.length
     })
   }
 
